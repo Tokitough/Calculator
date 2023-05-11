@@ -27,3 +27,15 @@ def calculator():
             # If invalid operation number
             print("Invalid operation number.")
             calculator()
+
+        # Display the result
+        print("The result is:", result)
+
+        # Ask if the user wants to perform another calculation
+        another_calculation = input("Do you want to perform another calculation? (y/n): ")
+
+        if another_calculation.lower() == 'y':
+            calculator()
+        else:
+            # End if user does not want to perform another calculation
+            print("Thank you for using the simple calculator app")
