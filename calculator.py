@@ -39,3 +39,15 @@ def calculator():
         else:
             # End if user does not want to perform another calculation
             print("Thank you for using the simple calculator app")
+            
+    # Handle runtime errors
+    except ZeroDivisionError:
+        # Handle division by zero error
+        print("Error: Cannot divide by zero.")
+        calculator()
+    except ValueError:
+        # Handle invalid input error
+        print("Error: Invalid input.")
+        calculator()
+
+calculator()
