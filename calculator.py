@@ -12,3 +12,18 @@ def calculator():
         # Get user input for two numbers
         num_1 = float(input("Enter the first number: "))
         num_2 = float(input("Enter the second number: "))
+        
+        # Perform operation based on user input
+        if operation == 1:
+            result = num_1 + num_2
+        elif operation == 2:
+            result = num_1 - num_2
+        elif operation == 3:
+            result = num_1 * num_2
+        elif operation == 4:
+            result = num_1 / num_2
+        else:
+
+            # If invalid operation number
+            print("Invalid operation number.")
+            calculator()
